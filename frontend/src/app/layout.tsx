@@ -1,8 +1,31 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from 'next/font/local'
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+// const accordAlt = localFont({
+//   src: './AccordAltReg.ttf',
+//   display: 'swap',
+// });
+
+// const accordAltBold = localFont({
+//   src: './AccordAltBold.ttf',
+//   display: 'swap',
+// });
+
+const accordAlt = localFont({
+  src: [
+    {
+      path: './AccordAltReg.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './AccordAltBold.ttf',
+      weight: '700',
+      style: 'normal',
+    },
+  ],
+});
 
 export const metadata: Metadata = {
   title: "Strapi & NextJS",
@@ -16,7 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={accordAlt.className}>{children}</body>
     </html>
   );
 }
