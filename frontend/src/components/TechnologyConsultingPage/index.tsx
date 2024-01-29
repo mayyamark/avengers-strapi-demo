@@ -1,12 +1,12 @@
-import ConsultingPartnerSection from "./ConsultingPartnerSection";
+import PartnerSection from "./PartnerSection";
 import ExpertServicesSection from "./ExpertServicesSection";
 import TechnologyConsultingSection from "./TechnolygyConsultingSection";
 
-const TechnologyConsultingServicesPage = () => (
+const TechnologyConsultingServicesPage = async () => (
   <>
     <TechnologyConsultingSection />
     <ExpertServicesSection />
-    <ConsultingPartnerSection />
+    <PartnerSection />
   </>
 );
 

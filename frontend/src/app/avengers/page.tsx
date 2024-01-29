@@ -1,9 +1,5 @@
 import TechnologyConsultingServicesPage from "@/components/TechnologyConsultingPage";
 
-const TechnologuConsultingServices = async () => {
-  return (
-    <TechnologyConsultingServicesPage />
-  );
-}
+const TechnologyConsultingServices = async () => <TechnologyConsultingServicesPage />;
 
-export default TechnologuConsultingServices;
+export default TechnologyConsultingServices;

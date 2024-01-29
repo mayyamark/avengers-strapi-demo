@@ -1,21 +1,35 @@
+import { getTechnologyConsultingSection } from "@/requests/consultingServices";
 import styles from "./styles.module.css";
 
-const TechConsultingSection = () => (
-  <section className={styles['tech-consulting-section']}>
-    <div className={styles['content-container']}>
-      <div className={styles['content-wrapper']}>
-        <h1 className={styles['section-title']}>Technology consulting</h1>
-        <p className={styles['section-text']}>
-          Explore technology consulting services that
-          open doors to a wealth of industry experience,
-          cutting-edge ideas, and a wide array of skills. 
-          Whether you’re building a new product or revisiting 
-          your legacy systems, harnessing the power of expert 
-          guidance guarantees your project success.
-        </p>
+const TechConsultingSection = async() => {
+  const { 
+    data: { 
+      attributes: { 
+        backgroundImage, 
+        textSection
+      } 
+    }
+  } = await getTechnologyConsultingSection();
+
+  return (
+    <section 
+      className={styles['tech-consulting-section']} 
+      style={{ 
+        backgroundImage: `url(${backgroundImage.src})`
+      }}
+    >
+      <div className={styles['content-container']}>
+        <div className={styles['content-wrapper']}>
+          <h1 className={styles['section-title']}>
+            {textSection.title}
+          </h1>
+          <p className={styles['section-text']}>
+            {textSection.text}
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  )
+};
 
 export default TechConsultingSection;
