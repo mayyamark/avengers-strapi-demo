@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "technology_consulting_sections",
+  "info": {
+    "singularName": "technology-consulting-section",
+    "pluralName": "technology-consulting-sections",
+    "displayName": "Technology_Consulting_Section",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "backgroundImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.image"
+    },
+    "textSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.text-section"
+    }
+  }
+}

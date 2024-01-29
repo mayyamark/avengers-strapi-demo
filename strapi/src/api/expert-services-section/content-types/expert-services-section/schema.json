@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "expert_services_sections",
+  "info": {
+    "singularName": "expert-services-section",
+    "pluralName": "expert-services-sections",
+    "displayName": "Expert_Services_Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "links": {
+      "type": "dynamiczone",
+      "components": [
+        "common.link"
+      ]
+    }
+  }
+}
