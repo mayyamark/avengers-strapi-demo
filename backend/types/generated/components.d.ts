@@ -26,22 +26,9 @@ export interface CommonListItem extends Schema.Component {
   collectionName: 'components_common_list_items';
   info: {
     displayName: 'List_Item';
-    description: '';
   };
   attributes: {
     title: Attribute.String;
-  };
-}
-
-export interface CommonList extends Schema.Component {
-  collectionName: 'components_common_lists';
-  info: {
-    displayName: 'List';
-    description: '';
-  };
-  attributes: {
-    title: Attribute.String;
-    items: Attribute.Component<'common.list-item', true>;
   };
 }
 
@@ -52,7 +39,7 @@ export interface CommonTextSection extends Schema.Component {
   };
   attributes: {
     title: Attribute.String;
-    text: Attribute.Text;
+    text: Attribute.String;
   };
 }
 
@@ -62,7 +49,6 @@ declare module '@strapi/types' {
       'common.image': CommonImage;
       'common.link': CommonLink;
       'common.list-item': CommonListItem;
-      'common.list': CommonList;
       'common.text-section': CommonTextSection;
     }
   }

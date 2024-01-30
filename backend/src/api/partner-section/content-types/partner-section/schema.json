@@ -4,8 +4,7 @@
   "info": {
     "singularName": "partner-section",
     "pluralName": "partner-sections",
-    "displayName": "Partner_Section",
-    "description": ""
+    "displayName": "Partner_Section"
   },
   "options": {
     "draftAndPublish": true

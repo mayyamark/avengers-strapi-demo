@@ -4,8 +4,7 @@
   "info": {
     "singularName": "technology-consulting-section",
     "pluralName": "technology-consulting-sections",
-    "displayName": "Technology_Consulting_Section",
-    "description": ""
+    "displayName": "Technology_Consulting_Section"
   },
   "options": {
     "draftAndPublish": true
